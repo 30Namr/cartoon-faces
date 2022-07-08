@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bird {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /* background: #fff; */
+
+}
+
+.head {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: red;
+    border-radius: 50%;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.head:before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #e8c478;
+    border-radius: 50%;
+    top: 60%;
+    left: 10%;
+
+}
+
+.tail-top,
+.tail-middle,
+.tail-bottom {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(0 27%, 100% 40%, 100% 68%, 0 75%);
+    background: black;
+
+}
+
+.tail-middle {
+    top: 36%;
+    left: -19%;
+}
+
+.tail-top {
+    top: 30%;
+    left: -9%;
+    transform: rotate(30deg);
+}
+
+.tail-bottom {
+    top: 43%;
+    left: -11%;
+    transform: rotate(-22deg);
+}
+
+/* ---------------------------------------------------------------- */
+.eyebrow-right {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: black;
+    top: 25%;
+    right: 15%;
+    transform: rotate(-8deg);
+    z-index: 10;
+
+}
+
+.eyebrow-left {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: black;
+    top: 25%;
+    left: 15%;
+    transform: rotate(8deg);
+    z-index: 10;
+
+}
+
+/* ---------------------------------------------------------------------------- */
+.eye-right {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: whitesmoke;
+    top: 30%;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: 4px 1px 4px 1px rgb(196, 196, 196);
+    border: 2px solid black;
+}
+
+.eye-right:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    top: 25%;
+    left: 25%;
+}
+
+.eye-right:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    top: 24%;
+    left: 43%;
+}
+
+/* -------------------------------------------------- */
+.eye-left {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: whitesmoke;
+    top: 30%;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: -6px 0px 4px 0px rgb(196, 196, 196);
+    border: 2px solid black;
+}
+
+.eye-left:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    top: 25%;
+    right: 25%;
+}
+
+.eye-left:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    top: 24%;
+    right: 25%;
+}
+
+.beak {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: orange;
+    border: 2px solid black;
+    border-radius: 29% 0% 5% 0%;
+    transform: rotate(42deg);
+    top: 53%;
+    left: 36%;
+
+}
+
+.beak:before {
+    content: "";
+    position: absolute;
+    width: 149px;
+    height: 1px;
+    background: black;
+    transform: rotate(-45deg);
+    bottom: 50%;
+    right: -22px;
+    border: 1px solid black;
+}
+
+.hair {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 110px;
+    background: red;
+    transform: rotate(-30deg);
+    border: 2px solid black;
+    top: -81px;
+    right: 198px;
+    border-radius: 50%;
+
+}
+.hair:before{
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 110px;
+    background: red;
+    transform: rotate(-30deg);
+    border: 2px solid black;
+    top: -13px;
+    left: -48px;
+    border-radius: 50%;
+
+}
